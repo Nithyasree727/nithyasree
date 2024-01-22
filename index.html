@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    
+    <section id="header">
+        <h4>Nithyasree</h4>
+        
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="#header">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </section>
+    
+    <section id="pink">
+        <div class="header-text">
+            <h3>Hello, It's Me</h3>
+            <h6><span>Nithya Sree</span></h6>
+            <p>Passionate and detail-oriented Electronics & Electrical Communication Engineering student at IIT Kharagpur with a strong background in programming and a proven track record of academic excellence and project achievements.</p>
+            <a href="images/CV_offline.pdf" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="flip-container">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="images/metro.jpg" alt="Opti Track" style="width:260px;height:320px">
+                </div>
+                <div class="flip-box-back">
+                    <img src="images/blackbox.jpg"  style="width:260px;height:320px">
+                  <div class="overlay">
+                    <h4>Opti Track</h4>
+                  <p> Developed a transportation network analysis tool in C++ for optimizing routes between two stations. Implemented an efficient algorithm based on Dijkstra's shortest path algorithm, enabling the calculation of the
+                  shortest path between stations.</p>
+                    <div class="projects-link">
+                    <a href="#"></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="flip-box">    
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="images/rbs.jpg" alt="Room Booking " style="width:260px;height:320px">
+                </div>
+                <div class="flip-box-back">
+                    <img src="images/blackbox.jpg"  style="width:260px;height:320px">
+                    <div class="overlay">
+                  <h4>Room Booking </h4>
+                  <p> Designed and implemented a web-based room booking system using SQLAlchemy and flask's routing capabilities to
+                    create multiple endpoints for handling various functionalities. Ensured the utmost security and data integrity.</p>
+                    <div class="projects-link">
+                    <a href="#"></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="images/iot.jpg" alt="IOT Home Automation" style="width:260px;height:320px">
+                </div>
+                <div class="flip-box-back">
+                    <img src="images/blackbox.jpg"  style="width:260px;height:320px">
+                    <div class="overlay">
+                  <h4>IOT Home Automation</h4>
+                  <p> Developed an IoT-based home automation using Arduino Uno with wireless control and voice commands. Utilized Sinric Pro to establish integration with Amazon Alexa, Google Home
+                    for controlling devices.</p>
+                    <div class="projects-link">
+                    <a href="#"></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>  
+    
+    <section id="skills">
+        <div class="skillset">
+        <h2>Skills & Experience</h2>
+        </div>
+        <div class="container">
+           <img src="images/c-.png">
+           <img src="images/c.png">
+           <img src="images/javascript.png">
+        </div>
+        <div class="containeraw">
+           <img src="images/python.png">
+           <img src="images/github.png">
+           <img src="images/html.png">
+           <img src="images/social.png">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="row">
+            <div class="contact-left">
+                 <h2>Contact Me</h2>
+                 <p></i>nithyasree.iitkgp@gmail.com</p>
+                 <p>nithyasree_727</p>
+                 <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100075509734835"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nithyasree_727/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nithyasree-vadapalli-1aa06722a/"><i class="fab fa-linkedin"></i></a>
+                 </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2" >Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

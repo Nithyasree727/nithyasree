@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #ffffff
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #ffffff
+}
+
+h3{
+    font-size: 20px;
+    color: #ffffff
+}
+
+h4{
+    font-size: 30px;
+    color: #ffffff
+}
+
+h4 span{
+    color:rgb(225, 32, 222);
+}
+
+h6{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px 0 20px 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+
+/* body.first-page{
+    background-image: url(images/darkbg.jpg);
+    background-size: 1290px 600px;
+} */
+
+#header {
+    width: 100%;
+    padding: 1px 0px 1px 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#080808;
+    /*box-shadow: 0 5px 15px rgba(251, 253, 249, 0) <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>*/
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color:rgb(225, 32, 222);
+}
+
+#pink{
+    background-image: url(images/darkbg.jpg);
+    /*background-size: 1290px 600px;*/
+    background-size: 1270px 600px; /* Set your desired width and height values */
+    background-position: center top; 
+    width: 1256.5px; 
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-text{
+    margin-top: 1%;
+    padding: 170px 7% 0;
+    max-width: 750px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text span{
+    color: rgb(225, 32, 222);
+}
+
+.btn{
+    display: inline-block;
+    padding: 4px 15px;
+    background: transparent;
+    border: 2px solid rgb(245, 243, 245);
+    border-radius: 40px;
+    font-size: 16px;
+    color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: rgb(225, 32, 222);
+    border-color: rgb(225, 32, 222);
+    color:rgb(254, 253, 254);
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+#projects{
+    padding: 35px 95px;
+}
+
+.flip-container{
+    display: grid;
+    padding: 30px 10px;
+    grid-template-columns: repeat(3,minmax(100px,1fr));
+    grid-gap: 60px;
+    margin-top: 40px;
+}
+
+.projects-link{
+    text-decoration: none;
+    color:#ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.flip-box {
+    background-color: transparent;
+    padding: 25px 25px;
+    width: 305px;
+    height: 200px;
+    perspective: 1000px; 
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-box-front {
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+  }
+
+  .flip-box-back{
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+  }
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+.flip-box-front {
+    background-color: #050505;
+    size: 300px 200px;
+    color: rgb(247, 242, 242);
+  }
+  
+.flip-box-back {
+    background-color: rgb(10, 11, 11);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-back h4{
+    color: rgb(225, 32, 222);
+  }
+
+  .overlay{
+    position: absolute;
+    transform: translate(5%, -105%);
+    text-align: center;
+}
+
+.overlay h4 {
+    color: rgb(225, 32, 222);
+}
+
+  
+  .projects-link a{
+    padding: 70px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+  }
+
+
+ #skills{
+    padding: 120px 105px;
+}
+
+.skillset h2{
+    padding: 80px 330px;
+}
+.container{
+    width: 70%;
+    margin-left: 20px; 
+    height: 20%; 
+    padding: 20px 105px; 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 250px; 
+}  
+
+.container img {
+    width: 100px;
+    height:auto;
+}
+
+.container :hover{
+    transform: scale(1.2); 
+    transition: transform 0.3s ease;
+}
+
+.containeraw{
+    padding: 60px 2px; 
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 220px; 
+}  
+
+.containeraw img {
+    width: 100px;
+    height:auto;
+}
+
+.containeraw :hover{
+    transform: scale(1.2); 
+    transition: transform 0.3s ease;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin:0px 175px;
+}
+
+.contact-left{
+    flex-basis: 45%;
+}
+
+.contact-right{
+    flex-basis: 70%;
+}
+
+.contact-left p{
+    margin-top: 40px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    color:rgb(195, 75, 193);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color:rgb(248, 243, 248);
+    transform: translateY(-10px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    border-color: rgb(225, 32, 222);
+    background:rgb(19, 19, 19);
+}
+
+.contact-right form{
+    width: 100%;
+    max-width: 500px;
+    max-height: 250px;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(193, 192, 193);
+    padding: 15px;
+    margin: 8px 0;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
